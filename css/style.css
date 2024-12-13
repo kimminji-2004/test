@@ -1,0 +1,678 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
+:root {
+  --main_c1: #004f4a;
+  --main_c2: #90bd20;
+  --main_c3: #22bfa5;
+  --sub_black: #3a3a3a;
+  --basic_pd: 3rem;
+  --basic_mg: 7rem;
+  --mont: "Montserrat", sans-serif;
+  --col-2: 50%;
+  --col-3: 33.33%;
+  --col-4: 25%;
+  --col-5: 20%;
+  --col-6: 16.66%;
+  --col-10: 10%;
+  --c_red: #de3d4c;
+  --c_white: #fff;
+  --c_black: #000;
+  --c_3a: #3a3a3a;
+  --c_66: #666;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+}
+
+/* 기본 설정 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1620px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* 상단 */ /* 상단 */
+
+header a {
+  color: black;
+}
+
+#container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 300px);
+  height: 105px;
+  margin: 0 auto;
+}
+#home #logo {
+  width: 151px;
+  height: 54px;
+}
+
+#gnb ul {
+  text-align: center;
+}
+
+#gnb ul li {
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: inline;
+  padding: 0 45px;
+}
+
+/* box */
+#container .box {
+  display: flex;
+}
+
+/* 햄버거 버튼 영역 */
+
+#toggle-btn {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32px;
+  height: 27px;
+  /* background-color: aqua; */
+  margin-left: 44px;
+}
+
+#toggle-btn span {
+  display: inline-block;
+  background-color: var(--main_c1);
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+}
+
+#toggle-btn span:nth-child(1) {
+  top: 0;
+}
+
+#toggle-btn span:nth-child(2) {
+  width: 19px;
+}
+
+#toggle-btn span:nth-child(3) {
+  bottom: 0;
+}
+
+/* 메인 컨텐츠 */ /* 메인 컨텐츠 */
+
+/* 배너 */
+#main-banner {
+  background-image: url(../img/main-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 800px;
+}
+
+#main-banner .inner {
+  display: flex;
+  height: 800px;
+  padding-top: 16.6rem;
+  box-sizing: border-box;
+}
+
+#main-banner .num {
+  font-family: var(--mont);
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 70px 0 0;
+  padding: 7px 0 0;
+}
+
+#main-banner h2 {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 15px;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  background-color: var(--main_c1);
+  height: 40px;
+}
+
+#main-banner .text h3 {
+  color: white;
+  font-weight: 400;
+  margin: 1.8rem 0 6.6rem;
+  font-size: 4rem;
+  line-height: 4.8rem;
+}
+
+#main-banner .text strong {
+  color: #90bd20;
+}
+
+#main-banner .text p {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 2.8rem;
+  letter-spacing: -0.5px;
+}
+
+/* 버튼  */
+
+/* 버튼 초기화 */
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+}
+
+#main-banner .btn-box {
+  width: 208px;
+  height: 208px;
+}
+
+.btn {
+  margin-top: 61.6px;
+  /* display:inline-block; */
+  background-color: #004f4a;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Noto Sans KR", serif;
+  font-weight: 600;
+  font-size: 18px;
+  width: 198px;
+  height: 54px;
+}
+
+/* 위대함을 향한 이롬의 끊임없는 도전과 정신 */
+
+#Kategorie {
+  background: #fafafa;
+  padding: 13.6rem 0 15rem;
+  box-sizing: border-box;
+}
+
+#Kategorie .container .txt-box {
+  margin-bottom: 10rem;
+}
+
+#Kategorie .txt-box h3 {
+  font-size: 4.8rem;
+  color: #000;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+#Kategorie .txt-box .cir {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--main_c2);
+  margin: 0 -15px 0 0;
+  flex-shrink: 0;
+}
+
+#Kategorie .txt-box p {
+  letter-spacing: -0.025em;
+  line-height: 3.4rem;
+  margin: 38px 0 0;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+#Kategorie .txt-box strong {
+  margin: 38px 0 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.Kategorie-box ul {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 237px;
+}
+
+.Kategorie-box li a {
+  width: 324px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.Kategorie-box li span {
+  font-family: var(--mont);
+  font-size: 2.6rem;
+  color: #666;
+  font-weight: 700;
+  margin-top: 2.6rem;
+  text-transform: uppercase;
+}
+
+/* 제품 product */ /* 제품 product */
+#product h4 {
+  font-size: 2rem;
+  color: #aaa;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+#product h5 {
+  font-size: 4.4rem;
+  color: var(--main_c1);
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+#product .txt {
+  font-size: 2rem;
+  color: #3a3a3a;
+  line-height: 2.8rem;
+  margin: 3.4rem 0 12.2rem;
+}
+
+#product .content-wrap {
+  display: flex;
+  padding: 7rem 0 11.5rem;
+  box-sizing: border-box;
+}
+/* 버튼 */
+#product .more {
+  font-size: 14px;
+  color: black;
+}
+#product .more-box a {
+  display: flex;
+  align-items: center;
+}
+#product .more-box i {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  line-height: 34px;
+  margin-left: 10px;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--main_c2);
+}
+
+#product .right-box .more-box i {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  line-height: 34px;
+  margin-left: 10px;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--main_c1);
+}
+
+#product .more-box i:before {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 11px;
+}
+
+/* 왼쪽 박스 */
+
+#product .content-wrap .left-box {
+  padding-right: 8.2rem;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+/* 오른쪽 박스 */
+
+#product .content-wrap .right-box {
+  border-left: 2px dotted #dadada;
+  flex-direction: row-reverse;
+  padding-left: 10.3rem;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: right;
+}
+
+#product .content-wrap .right-box .more-box {
+  float: right;
+}
+/* 뉴스 */
+#news .container .cir {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--main_c2);
+  margin-left: -15px;
+  margin-bottom: -20px;
+}
+
+#news {
+  background-color: var(--main_c1);
+  padding: 15rem 0;
+  box-sizing: border-box;
+}
+
+#news .container {
+  max-width: 1620px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+#news h2 {
+  color: #dadada;
+  font: 40px var(--mont);
+  font-weight: 700;
+  letter-spacing: -0.0325em;
+  margin: 0;
+}
+
+#news h3 {
+  color: white;
+  font: 52px var(--mont);
+  font-weight: 700;
+  margin: 50px 0 222px;
+}
+
+/* 버튼 */
+#news .more {
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+}
+#news .more-box a {
+  display: flex;
+  align-items: center;
+}
+#news .more-box i {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  line-height: 34px;
+  margin-left: 10px;
+  text-align: center;
+  justify-content: center;
+  color: #000;
+  background-color: #d2ecea;
+}
+
+#news .more-box i:before {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 11px;
+}
+
+/* 오른쪽 리스트  */
+#news .box-right {
+  width: 100%;
+  max-width: 900px;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+#news .box-right ul li {
+  border-bottom: 2px solid #eaeaea;
+  padding: 4.8rem 3rem;
+}
+#news .box-right ul:nth-child(1) {
+  border-top: 2px solid #eaeaea;
+}
+
+#news .box-right ul li span {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  width: 100%;
+  overflow: hidden;
+}
+
+#news .box-right .list .title {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+#news .box-right .list .txt {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 600;
+  margin: 16.8px 0 12px;
+}
+#news .box-right .list .date {
+  font-size: 1.6rem;
+  color: #aaa;
+  font-weight: 700;
+  font-family: var(--mont);
+}
+
+/* about us */
+#about .container .cir {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--main_c2);
+  margin-left: -15px;
+  margin-bottom: -30px;
+}
+
+#about {
+  padding: 11rem 0 15rem;
+}
+
+#about .container {
+  max-width: 1620px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  box-sizing: border-box;
+}
+
+#about .container h2 {
+  font-size: 32px;
+  color: #666;
+  font-weight: 700;
+  line-height: 5.6rem;
+}
+
+#about .container h3 {
+  font-size: 5.2rem;
+  color: #000;
+  font-weight: 700;
+  font-family: var(--mont);
+  margin: 5rem 0 9.5rem;
+}
+
+/* 그룹 박스 */
+
+#about .box-group {
+  display: flex;
+}
+
+#about .box-group li {
+  position: relative;
+}
+
+#about .box-txt {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 6rem 4rem 6.8rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+#about .box-txt p {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 500;
+  font-family: var(--mont);
+  display: inline-block;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+#about .box-txt h4 {
+  font-size: 4.6rem;
+  color: #fff;
+  font-weight: 600;
+  line-height: 6rem;
+}
+
+/* footer */
+footer {
+  background: #111;
+  padding-bottom: 5.8rem;
+  box-sizing: border-box;
+}
+
+#footer-wrap .container {
+  max-width: 1620px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  box-sizing: border-box;
+}
+
+#footer-wrap .container .list {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #343434;
+  box-sizing: border-box;
+  padding: 3.1rem 0;
+}
+
+#footer-wrap .container ul {
+  display: flex;
+  align-items: center;
+  margin-left: -3.8rem;
+}
+
+#footer-wrap .container ul li {
+  margin-left: 3.8rem;
+}
+
+#footer-wrap .container ul li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+#footer-wrap .container .all-company {
+  position: relative;
+}
+
+#footer-wrap .container .all-company label {
+  width: 225px;
+  height: 38px;
+  display: flex;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  color: #dadada;
+  padding: 0 5px;
+  height: 38px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+#footer-wrap .container .all-company label:after {
+  content: "\f106";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+#footer-wrap .info {
+  display: flex;
+  align-items: center;
+  margin: 32px 0 20px;
+}
+
+#footer-wrap .txt p {
+  display: inline-block;
+  font-size: 14px;
+  color: #aaa;
+}
+
+#footer-wrap .txt p:nth-child(2):before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background: #626262;
+  margin: 0 2.2rem;
+}
+#footer-wrap .txt p:nth-child(3):before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background: #626262;
+  margin: 0 2.2rem;
+}
+
+#footer-wrap .copyright {
+  font-size: 14px;
+  color: #aaa;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: -0.025em;
+}
